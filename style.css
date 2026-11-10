@@ -884,6 +884,14 @@ ul {
     background: linear-gradient(135deg, #6366f1, #a855f7);
 }
 
+.pinpage-gradient {
+    background: linear-gradient(135deg, #4f46e5, #06b6d4);
+}
+
+.indrix-gradient {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
 .project-card:hover .project-gradient-overlay {
     opacity: 0.35;
 }
@@ -957,6 +965,19 @@ ul {
 
 .project-btn {
     align-self: flex-start;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    transition: var(--transition-fast);
+}
+
+.project-btn:hover {
+    border-color: var(--primary);
+    background: rgba(0, 242, 254, 0.05);
+    transform: translateY(-2px);
 }
 
 /* ==========================================================================
@@ -1316,6 +1337,7 @@ ul {
 
 .modal-actions {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     border-top: 1px solid var(--border-color);
     padding-top: 1.5rem;
