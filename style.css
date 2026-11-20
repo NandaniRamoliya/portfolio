@@ -888,6 +888,10 @@ ul {
     background: linear-gradient(135deg, #4f46e5, #06b6d4);
 }
 
+.replix-gradient {
+    background: linear-gradient(135deg, #16a34a, #0891b2, #4f46e5);
+}
+
 .indrix-gradient {
     background: linear-gradient(135deg, #4f46e5, #7c3aed);
 }
