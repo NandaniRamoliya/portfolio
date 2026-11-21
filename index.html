@@ -75,7 +75,7 @@
                         I build <span class="typewriter" id="typewriter-text" data-words='["AI Agents & Workflows", "AI Products like PinPage", "Web Automation & Scrapers", "FastAPI Backends", "Vibe Coded Applications"]'></span>
                     </h2>
                     <p class="hero-desc">
-                        AI Developer and Python Automation Engineer passionate about building intelligent software, web scraping solutions, and automated workflows. Skilled in Python, n8n, FastAPI, Playwright, Selenium, and modern development. Founder of <a href="https://nandaniramoliya.github.io/Indrix/" target="_blank" rel="noopener" class="link-hover"><strong>Indrix</strong></a>, makers of <a href="https://pinpage-8no.pages.dev/" target="_blank" rel="noopener" class="link-hover"><strong>PinPage</strong></a> and <a href="https://replix.pages.dev/" target="_blank" rel="noopener" class="link-hover"><strong>Replix</strong></a>.
+                        AI Developer and Python Automation Engineer passionate about building intelligent software, web scraping solutions, and automated workflows. Skilled in Python, n8n, FastAPI, Playwright, Selenium, and modern development. Founder of <a href="https://nandaniramoliya.github.io/Indrix/" target="_blank" rel="noopener" class="link-hover"><strong>Indrix</strong></a>, makers of <a href="https://pinpage-8no.pages.dev/" target="_blank" rel="noopener" class="link-hover"><strong>PinPage</strong></a> and <a href="https://replix-cw3.pages.dev/" target="_blank" rel="noopener" class="link-hover"><strong>Replix</strong></a>.
                     </p>
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -133,7 +133,7 @@
                             My experience spans building AI-powered lead generation workflows, custom web scrapers using <strong>Playwright & Selenium</strong>, Model Context Protocol (MCP) tooling published on PyPI, and backend API integration using FastAPI and n8n.
                         </p>
                         <p class="about-p">
-                            I am also the founder of <strong><a href="https://nandaniramoliya.github.io/Indrix/" target="_blank" rel="noopener" class="link-hover">Indrix</a></strong>, a technology company that makes its own products and builds AI agents, automations and websites for businesses. Its first product, <strong><a href="https://pinpage-8no.pages.dev/" target="_blank" rel="noopener" class="link-hover">PinPage</a></strong>, turns a Google Maps listing into a complete business website in about 2 minutes. Its second, <strong><a href="https://replix.pages.dev/" target="_blank" rel="noopener" class="link-hover">Replix</a></strong>, puts a business on WhatsApp on autopilot: orders, bookings, reminders and AI answers.
+                            I am also the founder of <strong><a href="https://nandaniramoliya.github.io/Indrix/" target="_blank" rel="noopener" class="link-hover">Indrix</a></strong>, a technology company that makes its own products and builds AI agents, automations and websites for businesses. Its first product, <strong><a href="https://pinpage-8no.pages.dev/" target="_blank" rel="noopener" class="link-hover">PinPage</a></strong>, turns a Google Maps listing into a complete business website in about 2 minutes. Its second, <strong><a href="https://replix-cw3.pages.dev/" target="_blank" rel="noopener" class="link-hover">Replix</a></strong>, puts a business on WhatsApp on autopilot: orders, bookings, reminders and AI answers.
                         </p>
                         <p class="about-p">
                             I hold a <strong>Diploma in Information Technology</strong> from Gujarat Technological University (GTU) with a <strong>9.40 / 10 CGPA</strong>, and I thrive on learning new frameworks and shipping high-value digital solutions.
@@ -363,13 +363,50 @@
             <div class="section-container">
                 <span class="section-subtitle">Showcase of My Work</span>
                 <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-intro">Explore my work across specialized domains — from autonomous AI agents and intelligent bots to production web platforms and machine learning systems.</p>
                 
-                <div class="projects-grid">
-                    <!-- Project: PinPage (Indrix product) -->
-                    <div class="project-card" data-project="pinpage">
+                <!-- Project Category Filter Bar -->
+                <div class="projects-filter-wrapper">
+                    <div class="projects-filter-bar" role="tablist" aria-label="Filter Projects by Category">
+                        <button class="project-category-btn active" data-filter="all" role="tab" aria-selected="true">
+                            <span class="category-icon">✦</span>
+                            <span class="category-name">All Projects</span>
+                            <span class="category-count">8</span>
+                        </button>
+                        <button class="project-category-btn" data-filter="ai" role="tab" aria-selected="false">
+                            <span class="category-icon">🤖</span>
+                            <span class="category-name">AI & ML</span>
+                            <span class="category-count">5</span>
+                        </button>
+                        <button class="project-category-btn" data-filter="agent" role="tab" aria-selected="false">
+                            <span class="category-icon">⚡</span>
+                            <span class="category-name">AI Agents</span>
+                            <span class="category-count">4</span>
+                        </button>
+                        <button class="project-category-btn" data-filter="bot" role="tab" aria-selected="false">
+                            <span class="category-icon">🕷️</span>
+                            <span class="category-name">Bots & Automation</span>
+                            <span class="category-count">3</span>
+                        </button>
+                        <button class="project-category-btn" data-filter="website" role="tab" aria-selected="false">
+                            <span class="category-icon">🌐</span>
+                            <span class="category-name">Websites</span>
+                            <span class="category-count">3</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="projects-status-line">
+                    <span class="projects-count-badge" id="projects-counter">Showing all <strong>8</strong> projects</span>
+                </div>
+                
+                <div class="projects-grid" data-active-filter="all">
+                    <!-- Project: PinPage (Indrix flagship product) -->
+                    <div class="project-card" data-project="pinpage" data-category="ai agent website">
                         <div class="project-img-wrapper">
                             <div class="project-gradient-overlay pinpage-gradient"></div>
-                            <span class="project-tag">AI Product</span>
+                            <span class="project-tag tag-ai"><span class="tag-dot"></span> AI Agent & Product</span>
+                            <span class="featured-ribbon">⭐ Flagship Product • Indrix</span>
                             <div class="project-icon-top">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                             </div>
@@ -387,10 +424,11 @@
                     </div>
 
                     <!-- Project: Replix (Indrix product) -->
-                    <div class="project-card" data-project="replix">
+                    <div class="project-card" data-project="replix" data-category="ai agent bot">
                         <div class="project-img-wrapper">
                             <div class="project-gradient-overlay replix-gradient"></div>
-                            <span class="project-tag">AI Product</span>
+                            <span class="project-tag tag-bot"><span class="tag-dot"></span> WhatsApp AI Bot</span>
+                            <span class="featured-ribbon">⭐ Indrix Product</span>
                             <div class="project-icon-top">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
                             </div>
@@ -408,33 +446,77 @@
                         </div>
                     </div>
 
-                    <!-- Project: Indrix company website -->
-                    <div class="project-card" data-project="indrix">
+                    <!-- Project: CodeThemes MCP -->
+                    <div class="project-card" data-project="mcp" data-category="ai agent">
                         <div class="project-img-wrapper">
-                            <div class="project-gradient-overlay indrix-gradient"></div>
-                            <span class="project-tag">Company Website</span>
+                            <div class="project-gradient-overlay mcp-gradient"></div>
+                            <span class="project-tag tag-agent"><span class="tag-dot"></span> AI Agent Tooling</span>
                             <div class="project-icon-top">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">Indrix Website</h3>
-                            <p class="project-desc">The official website of my company, Indrix: products, services, selected work and a contact form that opens WhatsApp or email with the message ready to send.</p>
+                            <h3 class="project-title">CodeThemes MCP</h3>
+                            <p class="project-desc">Python-based CLI tool using Model Context Protocol enabling LLMs to modify code themes dynamically; published on PyPI.</p>
                             <div class="project-tech">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                                <span>GitHub Pages</span>
+                                <span>Python</span>
+                                <span>MCP Protocol</span>
+                                <span>CLI Tooling</span>
+                                <span>PyPI</span>
+                            </div>
+                            <button class="project-btn btn-sm">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Project: Lead Gen Automation -->
+                    <div class="project-card" data-project="leadgen" data-category="ai agent bot">
+                        <div class="project-img-wrapper">
+                            <div class="project-gradient-overlay leadgen-gradient"></div>
+                            <span class="project-tag tag-bot"><span class="tag-dot"></span> Agent & Outreach Bot</span>
+                            <div class="project-icon-top">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">AI Lead Gen & Outreach</h3>
+                            <p class="project-desc">End-to-end prospecting system linking Apollo, Apify scrapers, and GPT models for automated lead qualification and email sequences.</p>
+                            <div class="project-tech">
+                                <span>n8n</span>
+                                <span>OpenAI API</span>
+                                <span>Apify</span>
+                                <span>FastAPI</span>
                             </div>
                             <button class="project-btn btn-sm">Learn More</button>
                         </div>
                     </div>
 
-                    <!-- Project 1: Scraper Project -->
-                    <div class="project-card" data-project="scraper">
+                    <!-- Project: PDF Malware Detector -->
+                    <div class="project-card" data-project="malware" data-category="ai">
+                        <div class="project-img-wrapper">
+                            <div class="project-gradient-overlay malware-gradient"></div>
+                            <span class="project-tag tag-ai"><span class="tag-dot"></span> AI & Machine Learning</span>
+                            <div class="project-icon-top">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">PDF Malware Detector</h3>
+                            <p class="project-desc">Machine learning classification system detecting malicious PDF scripts, deployed with a FastAPI backend host.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Scikit-Learn</span>
+                                <span>FastAPI</span>
+                            </div>
+                            <button class="project-btn btn-sm">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Project: Scraper Project -->
+                    <div class="project-card" data-project="scraper" data-category="bot">
                         <div class="project-img-wrapper">
                             <div class="project-gradient-overlay scraper-gradient"></div>
-                            <span class="project-tag">Web Scraping & Data</span>
+                            <span class="project-tag tag-bot"><span class="tag-dot"></span> Scraping Bot & Data</span>
                             <div class="project-icon-top">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
                             </div>
@@ -452,76 +534,33 @@
                         </div>
                     </div>
 
-                    <!-- Project 2: CodeThemes MCP -->
-                    <div class="project-card" data-project="mcp">
+                    <!-- Project: Indrix company website -->
+                    <div class="project-card" data-project="indrix" data-category="website">
                         <div class="project-img-wrapper">
-                            <div class="project-gradient-overlay mcp-gradient"></div>
-                            <span class="project-tag">AI Tooling</span>
+                            <div class="project-gradient-overlay indrix-gradient"></div>
+                            <span class="project-tag tag-website"><span class="tag-dot"></span> Company Website</span>
                             <div class="project-icon-top">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">CodeThemes MCP</h3>
-                            <p class="project-desc">Python-based CLI tool using Model Context Protocol enabling LLMs to modify code themes dynamically; published on PyPI.</p>
+                            <h3 class="project-title">Indrix Website</h3>
+                            <p class="project-desc">The official website of my company, Indrix: products, services, selected work and a contact form that opens WhatsApp or email with the message ready to send.</p>
                             <div class="project-tech">
-                                <span>Python</span>
-                                <span>MCP</span>
-                                <span>CLI</span>
-                                <span>PyPI</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>GitHub Pages</span>
                             </div>
                             <button class="project-btn btn-sm">Learn More</button>
                         </div>
                     </div>
                     
-                    <!-- Project 3: Lead Gen Automation -->
-                    <div class="project-card" data-project="leadgen">
-                        <div class="project-img-wrapper">
-                            <div class="project-gradient-overlay leadgen-gradient"></div>
-                            <span class="project-tag">Automation</span>
-                            <div class="project-icon-top">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-title">AI Lead Gen & Outreach</h3>
-                            <p class="project-desc">End-to-end prospecting system linking Apollo, Apify scrapers, and GPT models for automated lead qualification and email sequences.</p>
-                            <div class="project-tech">
-                                <span>n8n</span>
-                                <span>OpenAI API</span>
-                                <span>Apify</span>
-                                <span>FastAPI</span>
-                            </div>
-                            <button class="project-btn btn-sm">Learn More</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Project 4: PDF Malware Detector -->
-                    <div class="project-card" data-project="malware">
-                        <div class="project-img-wrapper">
-                            <div class="project-gradient-overlay malware-gradient"></div>
-                            <span class="project-tag">AI Security</span>
-                            <div class="project-icon-top">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-title">PDF Malware Detector</h3>
-                            <p class="project-desc">Machine learning classification system detecting malicious PDF scripts, deployed with a FastAPI backend host.</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>Machine Learning</span>
-                                <span>FastAPI</span>
-                            </div>
-                            <button class="project-btn btn-sm">Learn More</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Project 5: Shree Kanaiya Dumper Site -->
-                    <div class="project-card" data-project="dumper">
+                    <!-- Project: Shree Kanaiya Dumper Site -->
+                    <div class="project-card" data-project="dumper" data-category="website">
                         <div class="project-img-wrapper">
                             <div class="project-gradient-overlay dumper-gradient"></div>
-                            <span class="project-tag">Web Development</span>
+                            <span class="project-tag tag-website"><span class="tag-dot"></span> Client Website</span>
                             <div class="project-icon-top">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 4a2 2 0 00-2-2m-2 2a2 2 0 11-4 0 2 2 0 014 0zM12 11V5a2 2 0 114 0v6"/></svg>
                             </div>
@@ -538,6 +577,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
             </div>
         </section>
 
@@ -671,7 +712,7 @@
         <div class="modal-content">
             <button class="modal-close" aria-label="Close Modal">&times;</button>
             <div class="modal-body-content">
-                <span class="modal-tag">AI Product</span>
+                <span class="modal-tag tag-ai">AI Agent & Product</span>
                 <h3 class="modal-title">PinPage</h3>
                 <h4 class="modal-subtitle">AI Website Maker for Local Businesses, by Indrix</h4>
                 
@@ -707,10 +748,10 @@
         <div class="modal-content">
             <button class="modal-close" aria-label="Close Modal">&times;</button>
             <div class="modal-body-content">
-                <span class="modal-tag">AI Product</span>
+                <span class="modal-tag tag-bot">AI Product & WhatsApp Automation</span>
                 <h3 class="modal-title">Replix</h3>
                 <h4 class="modal-subtitle">WhatsApp Automation for Local Businesses, by Indrix</h4>
-
+                
                 <div class="modal-desc">
                     <p>Replix turns a business's WhatsApp number into a 24/7 assistant on Meta's official WhatsApp Business (Cloud) API. One server runs many client businesses, each set up from a ready-made preset in minutes, and owners manage everything from a no-code dashboard.</p>
 
@@ -735,7 +776,7 @@
                 </div>
 
                 <div class="modal-actions">
-                    <a href="https://replix.pages.dev/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Replix</a>
+                    <a href="https://replix-cw3.pages.dev/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Replix</a>
                 </div>
             </div>
         </div>
@@ -747,7 +788,7 @@
         <div class="modal-content">
             <button class="modal-close" aria-label="Close Modal">&times;</button>
             <div class="modal-body-content">
-                <span class="modal-tag">Company Website</span>
+                <span class="modal-tag tag-website">Company Website</span>
                 <h3 class="modal-title">Indrix Website</h3>
                 <h4 class="modal-subtitle">Official Website of My Company</h4>
                 
@@ -786,7 +827,7 @@
         <div class="modal-content">
             <button class="modal-close" aria-label="Close Modal">&times;</button>
             <div class="modal-body-content">
-                <span class="modal-tag">Web Scraping</span>
+                <span class="modal-tag tag-bot">Scraping Bot & Data Extraction</span>
                 <h3 class="modal-title">Google Maps & Web Scraper</h3>
                 <h4 class="modal-subtitle">Automated Business Data Extraction</h4>
                 
@@ -822,7 +863,7 @@
         <div class="modal-content">
             <button class="modal-close" aria-label="Close Modal">&times;</button>
             <div class="modal-body-content">
-                <span class="modal-tag">AI Tooling</span>
+                <span class="modal-tag tag-agent">AI Agent Tooling</span>
                 <h3 class="modal-title">CodeThemes MCP</h3>
                 <h4 class="modal-subtitle">CLI AI Tool</h4>
                 
@@ -856,7 +897,7 @@
         <div class="modal-content">
             <button class="modal-close" aria-label="Close Modal">&times;</button>
             <div class="modal-body-content">
-                <span class="modal-tag">Automation</span>
+                <span class="modal-tag tag-bot">AI Agent & Outreach Automation</span>
                 <h3 class="modal-title">AI Lead Gen & Outreach Automation</h3>
                 <h4 class="modal-subtitle">n8n & OpenAI Prospecting Pipeline</h4>
                 
@@ -891,7 +932,7 @@
         <div class="modal-content">
             <button class="modal-close" aria-label="Close Modal">&times;</button>
             <div class="modal-body-content">
-                <span class="modal-tag">AI Security</span>
+                <span class="modal-tag tag-ai">AI & Machine Learning</span>
                 <h3 class="modal-title">PDF Malware Detection System</h3>
                 <h4 class="modal-subtitle">Machine Learning Classifier</h4>
                 
@@ -925,7 +966,7 @@
         <div class="modal-content">
             <button class="modal-close" aria-label="Close Modal">&times;</button>
             <div class="modal-body-content">
-                <span class="modal-tag">Web Development</span>
+                <span class="modal-tag tag-website">Client Website</span>
                 <h3 class="modal-title">Shree Kanaiya Dumper Website</h3>
                 <h4 class="modal-subtitle">Client Presentation Website</h4>
                 

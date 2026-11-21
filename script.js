@@ -130,7 +130,70 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ==========================================================================
-       6. PROJECT DETAIL MODALS
+       6. CATEGORY FILTERING FOR PROJECTS
+       ========================================================================== */
+    const categoryBtns = document.querySelectorAll('.project-category-btn');
+    const allProjectCards = document.querySelectorAll('.projects-grid .project-card');
+    const projectsGrid = document.querySelector('.projects-grid');
+    const projectsCounter = document.getElementById('projects-counter');
+
+    if (categoryBtns.length && allProjectCards.length) {
+        if (projectsGrid) {
+            projectsGrid.setAttribute('data-active-filter', 'all');
+        }
+
+        const filterLabels = {
+            'all': 'all <strong>8</strong>',
+            'ai': '<strong>5</strong> in AI & ML',
+            'agent': '<strong>4</strong> in AI Agents',
+            'bot': '<strong>3</strong> in Bots & Automation',
+            'website': '<strong>3</strong> in Websites'
+        };
+
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+
+                // Update active tab styling & aria attributes
+                categoryBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-selected', 'false');
+                });
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+
+                // Update data-active-filter on the grid for CSS rules
+                if (projectsGrid) {
+                    projectsGrid.setAttribute('data-active-filter', filter);
+                }
+
+                // Filter cards with smooth fade/scale animation
+                let visibleCount = 0;
+                allProjectCards.forEach(card => {
+                    const categories = (card.getAttribute('data-category') || '').split(/\s+/);
+                    const isMatch = filter === 'all' || categories.includes(filter);
+
+                    if (isMatch) {
+                        card.classList.remove('is-hidden');
+                        card.classList.add('is-visible');
+                        visibleCount++;
+                    } else {
+                        card.classList.add('is-hidden');
+                        card.classList.remove('is-visible');
+                    }
+                });
+
+                // Update counter text
+                if (projectsCounter) {
+                    const label = filterLabels[filter] || `<strong>${visibleCount}</strong>`;
+                    projectsCounter.innerHTML = `Showing ${label} projects`;
+                }
+            });
+        });
+    }
+
+    /* ==========================================================================
+       7. PROJECT DETAIL MODALS
        ========================================================================== */
     const projectCards = document.querySelectorAll('.project-card');
     const modals = document.querySelectorAll('.project-modal');
@@ -173,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ==========================================================================
-       7. CONTACT FORM NOTIFICATION & SUBMISSION HANDLER
+       8. CONTACT FORM NOTIFICATION & SUBMISSION HANDLER
        ========================================================================== */
     const contactForm = document.getElementById('portfolio-contact-form');
     const submitBtn = document.getElementById('form-submit-btn');

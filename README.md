@@ -15,5 +15,6 @@ It is a plain static site (HTML, CSS and JavaScript) with no build step. All fil
 
 ## Add a project
 
-1. In `index.html`, copy one `<div class="project-card" data-project="...">` block and give it a new `data-project` name.
+1. In `index.html`, copy one `<div class="project-card" data-project="..." data-category="ai agent bot website">` block, set the appropriate `data-category` (`ai`, `agent`, `bot`, and/or `website`), and give it a unique `data-project` name.
 2. Copy one `<div class="project-modal" id="modal-...">` block near the end of the file and give it the matching id, for example `modal-myproject`.
+3. Update the category filter button counts in `index.html` and `script.js` if necessary.
