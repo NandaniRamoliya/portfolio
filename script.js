@@ -143,10 +143,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const filterLabels = {
-            'all': 'all <strong>8</strong>',
-            'ai': '<strong>5</strong> in AI & ML',
-            'agent': '<strong>4</strong> in AI Agents',
-            'bot': '<strong>3</strong> in Bots & Automation',
+            'all': 'all <strong>9</strong>',
+            'ai': '<strong>6</strong> in AI & ML',
+            'agent': '<strong>5</strong> in AI Agents',
+            'bot': '<strong>4</strong> in Bots & Automation',
             'website': '<strong>3</strong> in Websites'
         };
 

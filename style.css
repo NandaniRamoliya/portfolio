@@ -1020,6 +1020,10 @@ ul {
     background: linear-gradient(135deg, #f59e0b, #ec4899);
 }
 
+.leadpipe-gradient {
+    background: linear-gradient(135deg, #22c55e, #06b6d4);
+}
+
 .malware-gradient {
     background: linear-gradient(135deg, #10b981, #3b82f6);
 }

@@ -371,22 +371,22 @@
                         <button class="project-category-btn active" data-filter="all" role="tab" aria-selected="true">
                             <span class="category-icon">✦</span>
                             <span class="category-name">All Projects</span>
-                            <span class="category-count">8</span>
+                            <span class="category-count">9</span>
                         </button>
                         <button class="project-category-btn" data-filter="ai" role="tab" aria-selected="false">
                             <span class="category-icon">🤖</span>
                             <span class="category-name">AI & ML</span>
-                            <span class="category-count">5</span>
+                            <span class="category-count">6</span>
                         </button>
                         <button class="project-category-btn" data-filter="agent" role="tab" aria-selected="false">
                             <span class="category-icon">⚡</span>
                             <span class="category-name">AI Agents</span>
-                            <span class="category-count">4</span>
+                            <span class="category-count">5</span>
                         </button>
                         <button class="project-category-btn" data-filter="bot" role="tab" aria-selected="false">
                             <span class="category-icon">🕷️</span>
                             <span class="category-name">Bots & Automation</span>
-                            <span class="category-count">3</span>
+                            <span class="category-count">4</span>
                         </button>
                         <button class="project-category-btn" data-filter="website" role="tab" aria-selected="false">
                             <span class="category-icon">🌐</span>
@@ -397,7 +397,7 @@
                 </div>
 
                 <div class="projects-status-line">
-                    <span class="projects-count-badge" id="projects-counter">Showing all <strong>8</strong> projects</span>
+                    <span class="projects-count-badge" id="projects-counter">Showing all <strong>9</strong> projects</span>
                 </div>
                 
                 <div class="projects-grid" data-active-filter="all">
@@ -485,6 +485,28 @@
                                 <span>OpenAI API</span>
                                 <span>Apify</span>
                                 <span>FastAPI</span>
+                            </div>
+                            <button class="project-btn btn-sm">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Project: LeadAutomationPipeline (open source) -->
+                    <div class="project-card" data-project="leadpipe" data-category="ai agent bot">
+                        <div class="project-img-wrapper">
+                            <div class="project-gradient-overlay leadpipe-gradient"></div>
+                            <span class="project-tag tag-agent"><span class="tag-dot"></span> Open-Source Sales Agent</span>
+                            <div class="project-icon-top">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h18l-7 8.5V19l-4 2v-8.5L3 4z"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">LeadAutomationPipeline</h3>
+                            <p class="project-desc">A 24/7 sales engine: finds businesses city by city, audits their websites, writes personal outreach, follows up on email, WhatsApp and calls, and onboards new clients.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Claude API</span>
+                                <span>Flask</span>
+                                <span>SQLite</span>
                             </div>
                             <button class="project-btn btn-sm">Learn More</button>
                         </div>
@@ -921,6 +943,47 @@
                 
                 <div class="modal-actions">
                     <span class="client-badge">🔒 Client Proprietary Solution</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LeadAutomationPipeline Modal -->
+    <div class="project-modal" id="modal-leadpipe">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close Modal">&times;</button>
+            <div class="modal-body-content">
+                <span class="modal-tag tag-agent">AI Agent & Sales Automation</span>
+                <h3 class="modal-title">LeadAutomationPipeline</h3>
+                <h4 class="modal-subtitle">Open-source 24/7 lead generation, outreach and follow-up engine</h4>
+
+                <div class="modal-desc">
+                    <p>A self-hosted sales pipeline that runs in the background around the clock. It finishes one area, then rolls out city by city worldwide; reads each business's website for real, provable problems; finds the decision-maker and a verified email; and writes one personal message per lead with Claude or built-in templates.</p>
+
+                    <h5>Key Features:</h5>
+                    <ul>
+                        <li>Finds leads area by area worldwide (OpenStreetMap, Google Maps via Serper or Places, Google Sheets import) and scores them on 22 buying signals backed by evidence.</li>
+                        <li>Sends email automatically at human speed, with warm-up, daily caps, the recipient's office hours and several mailboxes; WhatsApp, Instagram, LinkedIn and call tasks are prepared as one-click actions.</li>
+                        <li>Reads replies, understands the intent, and runs a different follow-up track for every outcome: interested, call booked, proposal, not now (30/60/90 days), no reply (polite close) or unsubscribe.</li>
+                        <li>Onboards new clients after "yes": contract, payment, welcome document, kickoff, access and client portal, then check-ins, testimonials and referrals.</li>
+                        <li>Runs as a background service on Windows, macOS or Linux, with a simple five-page dashboard, safety checks on every message and 42 automated tests.</li>
+                    </ul>
+
+                    <h5>Technical Stack:</h5>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQLite</span>
+                        <span>Claude API</span>
+                        <span>OpenStreetMap</span>
+                        <span>SMTP / IMAP</span>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <a href="https://github.com/NandaniRamoliya/LeadAutomationPipeline" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View on GitHub</a>
+                    <a href="https://github.com/NandaniRamoliya/LeadAutomationPipeline/blob/main/docs/pdf/LeadAutomationPipeline-User-Guide.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">User Guide (PDF)</a>
                 </div>
             </div>
         </div>
